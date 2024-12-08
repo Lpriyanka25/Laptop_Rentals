@@ -1,0 +1,18 @@
+public class AccountHandler {
+    // Public static method to insert a new account
+    public static Account insertNewAccount(String accountName) {
+        try {
+            // Create a new account instance
+            Account newAccount = new Account(Name = accountName);
+
+            // Insert the account record
+            insert newAccount;
+
+            // Return the successfully inserted account record
+            return newAccount;
+        } catch (DmlException e) {
+            // Handle DML exception and return null
+            return null;
+        }
+    }
+}
